@@ -28,7 +28,7 @@ def save_images(output_dir, fetches, step=None):
         filesets.append(fileset)
     return filesets
 
-def append_index(output_dir, fiilesets, step=False):
+def append_index(output_dir, filesets, step=False):
     index_path = os.path.join(output_dir, "index.html")
     if os.path.exists(index_path):
         index = open(index_path, "a")
